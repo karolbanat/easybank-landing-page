@@ -2,21 +2,22 @@
 @use './mixins';
 
 :root {
-	// colors
+	/* colors */
 	@each $color, $shades in variables.$colors {
 		@each $shade, $value in $shades {
 			--clr-#{$color}-#{$shade}: #{$value};
 		}
 	}
 
-	// font families
+	/* font families */
+	--ff-primary: 'Public Sans', sans-serif;
 
-	// font wieghts
+	/* font wieghts */
 	@each $font-weight, $value in variables.$font-weights {
 		--fw-#{$font-weight}: #{$value};
 	}
 
-	// font sizes
+	/* font sizes */
 	@each $screen, $sizes in variables.$font-sizes {
 		@if $screen == small {
 			@each $size, $value in $sizes {
@@ -31,12 +32,19 @@
 		}
 	}
 
-	// border radius
+	// -- fz exceptions
+	--fz-primary-nav-link: 1.8rem;
+
+	@include mixins.mq(medium) {
+		--fz-primary-nav-link: 1.6rem;
+	}
+
+	/* border radius */
 	@each $radius, $value in variables.$border-radius {
 		--borr-#{$radius}: #{$value};
 	}
 
-	// spacings
+	/* spacings */
 	@each $unit, $sizes in variables.$spacings {
 		@each $size, $value in $sizes {
 			--spacing-#{$unit}-#{$size}: #{$value};

@@ -4,15 +4,65 @@ $breakpoints: (
 	large: 62em,
 );
 
-$colors: ();
+$colors: (
+	primary: (
+		400: hsl(158 61% 49%),
+		500: hsl(136 65% 51%),
+		600: hsl(192 70% 51%),
+		700: hsl(233 26% 24%),
+		gradient: linear-gradient(135deg, hsl(136 65% 51%) 0%, hsl(192 70% 51%) 100%),
+	),
+	neutral: (
+		100: hsl(0 0% 100%),
+		200: hsl(0 0% 98%),
+		300: hsl(220 16% 96%),
+		400: hsl(233 8% 62%),
+		900: hsl(0 0% 0%),
+	),
+);
 
 $font-sizes: (
-	small: (),
-	medium: (),
+	small: (
+		300: 1.4rem,
+		400: 1.6rem,
+		450: 1.6rem,
+		500: 2rem,
+		600: 3.2rem,
+		700: 4rem,
+	),
+	medium: (
+		450: 1.8rem,
+		500: 2.4rem,
+		600: 4rem,
+		700: 5.6rem,
+	),
 );
-$font-weights: ();
 
-$border-radius: ();
+// 1rem -> 1rem         article author
+// 1.4rem -> 1.4rem     article text            changed 1.3rem to 1.4rem
+// 1.4rem -> 1.4rem     copyright text          changed 1.5rem to 1.4rem
+// 1.6rem -> 1.6rem     footer nav link         changed 1.5rem to 1.6rem
+// 1.6rem -> 1.6rem     button                  changed 1.5rem to 1.6rem
+// 1.6rem -> 1.6rem     reasons card text       changed 1.5rem to 1.6rem
+// 1.6rem -> 1.6rem     article heading/link
+// 1.6rem -> 1.8rem     text                    changed 1.5rem to 1.6rem
+// 2rem -> 2.4rem       reasons card heading
+// 3.2rem -> 4rem       section heading
+// 4rem -> 5.6rem       primary heading
+// --- exception
+// 1.8rem -> 1.6rem     nav link                changed 1.4rem to 1.6rem
+
+$font-weights: (
+	300: 300,
+	400: 400,
+	700: 700,
+);
+
+$border-radius: (
+	200: 0.4rem,
+	300: 0.5rem,
+	900: 100vmax,
+);
 
 $spacings: (
 	em: (),

@@ -10,8 +10,8 @@
 }
 
 /* Remove list styles on ul, ol elements, which suggests default styling will be removed */
-ul,
-ol {
+ul[role='list'],
+ol[role='list'] {
 	list-style: none;
 }
 
