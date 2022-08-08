@@ -27,37 +27,46 @@
 
     <header class="primary-header">
         <nav aria-label="primary"
-             class="navigation">
-            <a aria-label="Home page"
-               href="#">
-                <img src="./dist/images/logo.svg"
-                     alt="">
-            </a>
+             class="navigation | bg-neutral-100">
+            <div class="container">
+                <div class="flex-space-between">
+                    <a aria-label="Home page"
+                       href="#">
+                        <img src="./dist/images/logo.svg"
+                             alt="">
+                    </a>
 
-            <button aria-expanded="false"
-                    aria-controls="primary-nav"
-                    class="toggle-btn">
-                <img src="./dist/images/icon-hamburger.svg"
-                     alt=""
-                     class="toggle-btn__icon-hamburger">
-                <img src="./dist/images/icon-close.svg"
-                     alt=""
-                     class="toggle-btn__icon-close">
-            </button>
+                    <button aria-expanded="false"
+                            aria-controls="primary-nav"
+                            class="toggle-btn">
+                        <img src="./dist/images/icon-hamburger.svg"
+                             alt=""
+                             class="toggle-btn__icon-hamburger">
+                        <img src="./dist/images/icon-close.svg"
+                             alt=""
+                             class="toggle-btn__icon-close">
+                    </button>
 
-            <div id="primary-nav"
-                 class="navigation__nav">
-                <ul class="navigation__nav-links">
-                    <li class="navigation__nav-link"><a href="#">Home</a></li>
-                    <li class="navigation__nav-link"><a href="#">About</a></li>
-                    <li class="navigation__nav-link"><a href="#">Contact</a></li>
-                    <li class="navigation__nav-link"><a href="#">Blog</a></li>
-                    <li class="navigation__nav-link"><a href="#">Careers</a></li>
-                </ul>
+                    <div id="primary-nav"
+                         class="navigation__nav">
+                        <ul class="navigation__nav-links">
+                            <li><a href="#"
+                                   class="navigation__nav-link">Home</a></li>
+                            <li><a href="#"
+                                   class="navigation__nav-link">About</a></li>
+                            <li><a href="#"
+                                   class="navigation__nav-link">Contact</a></li>
+                            <li><a href="#"
+                                   class="navigation__nav-link">Blog</a></li>
+                            <li><a href="#"
+                                   class="navigation__nav-link">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="#"
+                       class="button navigation__button">Request Invite</a>
+                </div>
             </div>
-
-            <a href="#"
-               class="button">Request Invite</a>
         </nav>
 
         <div class="primary-header__body">
@@ -198,9 +207,9 @@
         </section>
     </main>
 
-    <footer class="footer | bg-primary-700 text-neutral-100">
+    <footer class="primary-footer | bg-primary-700 text-neutral-100">
         <div class="container">
-            <div class="footer__social">
+            <div class="primary-footer__social">
                 <a href="#">
                     <img src="./dist/images/logo.svg"
                          alt="">
@@ -246,8 +255,8 @@
             </div>
 
             <nav aria-label="footer"
-                 class="footer__navigation">
-                <ul class="footer__nav-links">
+                 class="primary-footer__navigation">
+                <ul class="primary-footer__nav-links">
                     <li><a href="#"
                            class="link">About Us</a></li>
                     <li><a href="#"
@@ -266,11 +275,12 @@
             <div>
                 <a href="#"
                    class="button">Request Invite</a>
-                <p class="footer__copyright">&copy; Easybank. All Rights Reserved</p>
+                <p class="primary-footer__copyright">&copy; Easybank. All Rights Reserved</p>
             </div>
         </div>
     </footer>
 
+    <script src="./dist/js/main.min.js"></script>
 </body>
 
 </html>

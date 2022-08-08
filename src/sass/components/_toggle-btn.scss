@@ -1,0 +1,31 @@
+@use '../base/mixins';
+
+.toggle-btn {
+	display: inline-grid;
+	place-content: center;
+	width: 4rem;
+	aspect-ratio: 1;
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	&[aria-expanded='true'] &__icon-hamburger {
+		display: none;
+	}
+
+	&[aria-expanded='true'] &__icon-close {
+		display: block;
+	}
+
+	&[aria-expanded='false'] &__icon-hamburger {
+		display: block;
+	}
+
+	&[aria-expanded='false'] &__icon-close {
+		display: none;
+	}
+
+	@include mixins.mq(medium) {
+		display: none;
+	}
+}

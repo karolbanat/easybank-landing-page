@@ -1,0 +1,15 @@
+@keyframes fade-bottom-in {
+	from {
+		bottom: 100%;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
+}
+
+.fade-bottom-in {
+	animation: fade-bottom-in 0.35s ease;
+}
