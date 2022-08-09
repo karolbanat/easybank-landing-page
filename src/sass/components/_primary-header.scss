@@ -1,0 +1,41 @@
+@use '../base/mixins';
+
+.primary-header {
+	&__body {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		text-align: center;
+		gap: 4rem;
+
+		@include mixins.mq(medium) {
+			flex-direction: row;
+			text-align: initial;
+		}
+	}
+
+	&__content {
+		--flow-spacer: 1.5em;
+		--max-width: 50rem;
+		--padding-block: 0 var(--spacing-rem-800);
+
+		padding-block: var(--padding-block);
+		max-width: var(--max-width);
+
+		@include mixins.mq(medium) {
+			--padding-block: clamp(var(--spacing-rem-800), 15vw, 17rem);
+		}
+	}
+
+	&__primary-heading {
+		font-size: var(--fz-700);
+	}
+
+	&__image {
+		margin-top: -35%;
+		@include mixins.mq(medium) {
+			margin-top: 0;
+			transform: translateX(30%) scale(1.4);
+		}
+	}
+}
