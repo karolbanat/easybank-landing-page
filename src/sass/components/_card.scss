@@ -1,0 +1,24 @@
+@use '../base/mixins';
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--spacing-em-300);
+	text-align: center;
+
+	@include mixins.mq(large) {
+		align-items: flex-start;
+		text-align: initial;
+	}
+
+	/* elements */
+	&__heading {
+		font-size: var(--fz-500);
+	}
+
+	& > p {
+		font-size: var(--fz-400);
+		line-height: 1.75;
+	}
+}

@@ -1,0 +1,14 @@
+@use '../base/mixins';
+
+.even-columns {
+	display: grid;
+	gap: var(--spacing-em-400, 1rem);
+
+	@include mixins.mq(small) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include mixins.mq(large) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

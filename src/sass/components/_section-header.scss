@@ -1,0 +1,19 @@
+@use '../base/mixins';
+
+.section-header {
+	margin-bottom: clamp(var(--spacing-em-400), 7.5vw, var(--spacing-em-600));
+	text-align: center;
+
+	@include mixins.mq(medium) {
+		text-align: initial;
+	}
+
+	& > p {
+		max-width: 60ch;
+		margin-inline: auto;
+
+		@include mixins.mq(medium) {
+			margin-left: 0;
+		}
+	}
+}
