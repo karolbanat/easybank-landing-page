@@ -26,8 +26,10 @@ const handleMobileNavigation = () => {
 		setTimeout(() => {
 			primaryNav.classList.remove('fade-bottom-in');
 		}, 350);
+		document.body.classList.add('backdrop-shadow');
 	} else {
 		burgerBtn.setAttribute('aria-expanded', 'false');
+		document.body.classList.remove('backdrop-shadow');
 	}
 };
 
