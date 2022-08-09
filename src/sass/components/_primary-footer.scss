@@ -1,0 +1,48 @@
+@use '../base/mixins';
+
+.primary-footer {
+	text-align: center;
+
+	@include mixins.mq(medium) {
+		text-align: initial;
+	}
+
+	&__body {
+		@include mixins.flex-column-center;
+		justify-content: center;
+		gap: clamp(var(--spacing-rem-500), 5vw, var(--spacing-em-700));
+
+		@include mixins.mq(medium) {
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: stretch;
+		}
+	}
+
+	&__column {
+		@include mixins.flex-column-center;
+		justify-content: space-between;
+		gap: var(--spacing-rem-500);
+
+		@include mixins.mq(medium) {
+			align-items: flex-start;
+
+			&--end {
+				align-items: flex-end;
+				margin-left: auto;
+				text-align: right;
+			}
+		}
+	}
+
+	&__nav-links {
+		@include mixins.mq(medium) {
+			columns: 2;
+			gap: clamp(var(--spacing-rem-400), 5vw, var(--spacing-rem-800));
+		}
+	}
+
+	&__copyright {
+		opacity: 0.5;
+	}
+}

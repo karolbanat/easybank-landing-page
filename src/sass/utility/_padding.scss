@@ -1,3 +1,7 @@
-.padding-block-800 {
+.padding-block-rem-700 {
+	padding-block: var(--spacing-rem-700);
+}
+
+.padding-block-rem-800 {
 	padding-block: var(--spacing-rem-800);
 }

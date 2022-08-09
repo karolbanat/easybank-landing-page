@@ -90,7 +90,7 @@
 
     <main>
         <section aria-labelledby="reasons-heading"
-                 class="padding-block-800 bg-neutral-300">
+                 class="padding-block-rem-800 bg-neutral-300">
             <div class="container">
                 <header class="section-header | flow"
                         style="--flow-spacer: 1.5em">
@@ -147,7 +147,7 @@
         </section>
 
         <section aria-labelledby="articles-heading"
-                 class="padding-block-800">
+                 class="padding-block-rem-800">
             <div class="container">
                 <header class="section-header">
                     <h2 id="articles-heading"
@@ -220,75 +220,88 @@
         </section>
     </main>
 
-    <footer class="primary-footer | bg-primary-700 text-neutral-100">
+    <footer class="primary-footer | padding-block-rem-700 bg-primary-700 text-neutral-100">
         <div class="container">
-            <div class="primary-footer__social">
-                <a href="#">
-                    <img src="./dist/images/logo.svg"
-                         alt="">
-                </a>
+            <div class="primary-footer__body">
+                <div class="primary-footer__column">
+                    <a aria-label="Home page"
+                       href="#">
+                        <img src="./dist/images/logo-light.svg"
+                             alt="">
+                    </a>
 
-                <ul class="social-links">
-                    <li>
-                        <a href="#"
-                           class="social-links__link">
-                            <img src="./dist/images/icon-facebook.svg"
-                                 alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                           class="social-links__link">
-                            <img src="./dist/images/icon-youtube.svg"
-                                 alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                           class="social-links__link">
-                            <img src="./dist/images/icon-twitter.svg"
-                                 alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                           class="social-links__link">
-                            <img src="./dist/images/icon-pinterest.svg"
-                                 alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#"
-                           class="social-links__link">
-                            <img src="./dist/images/icon-instagram.svg"
-                                 alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <ul class="social-links | flex">
+                        <li>
+                            <a aria-label="Facebook"
+                               href="#"
+                               class="social-links__link">
+                                <svg class="social-links__icon">
+                                    <use xlink:href="./dist/images/social-icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="YouTube"
+                               href="#"
+                               class="social-links__link">
+                                <svg class="social-links__icon">
+                                    <use xlink:href="./dist/images/social-icons.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Twitter"
+                               href="#"
+                               class="social-links__link">
+                                <svg class="social-links__icon">
+                                    <use xlink:href="./dist/images/social-icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Pinterest"
+                               href="#"
+                               class="social-links__link">
+                                <svg class="social-links__icon">
+                                    <use xlink:href="./dist/images/social-icons.svg#icon-pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a aria-label="Instagram"
+                               href="#"
+                               class="social-links__link">
+                                <svg class="social-links__icon">
+                                    <use xlink:href="./dist/images/social-icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-            <nav aria-label="footer"
-                 class="primary-footer__navigation">
-                <ul class="primary-footer__nav-links">
-                    <li><a href="#"
-                           class="link">About Us</a></li>
-                    <li><a href="#"
-                           class="link">Contact</a></li>
-                    <li><a href="#"
-                           class="link">Blog</a></li>
-                    <li><a href="#"
-                           class="link">Careers</a></li>
-                    <li><a href="#"
-                           class="link">Support</a></li>
-                    <li><a href="#"
-                           class="link">Privacy Policy</a></li>
-                </ul>
-            </nav>
+                <nav aria-label="footer"
+                     class="primary-footer__navigation">
+                    <ul class="primary-footer__nav-links | flow">
+                        <li><a href="#"
+                               class="link">About Us</a></li>
+                        <li><a href="#"
+                               class="link">Contact</a></li>
+                        <li><a href="#"
+                               class="link">Blog</a></li>
+                        <li><a href="#"
+                               class="link">Careers</a></li>
+                        <li><a href="#"
+                               class="link">Support</a></li>
+                        <li><a href="#"
+                               class="link">Privacy Policy</a></li>
+                    </ul>
+                </nav>
 
-            <div>
-                <a href="#"
-                   class="button">Request Invite</a>
-                <p class="primary-footer__copyright">&copy; Easybank. All Rights Reserved</p>
+                <div class="primary-footer__column primary-footer__column--end">
+                    <a href="#"
+                       class="button">Request Invite</a>
+                    <p class="primary-footer__copyright">&copy; Easybank. All Rights Reserved</p>
+                </div>
             </div>
         </div>
     </footer>
